@@ -5,8 +5,26 @@
 <div class = "row ">
     <h>Crypto Holdings</h>
 </div>
-<div class = "row ">
-    <p>Current BTC valuation: </p>
+
+<div class = "row">
+    <div class = "col-sm-3 text-center">
+        <h2>BTC</h2>
+    </div>
+    <div class = "col-sm-9">
+        <p> 
+            Free BTC balance: {{ BTC_bal.free }} 
+            <br />
+            My BTC valuation: {{ BTC_val }}
+            <br />
+            BTC market price: £ {{ BTCGBP.price }}
+            <br /> 
+            Average open:  £ {{ BTC_av_open }}
+        </p>
+    </div>    
+</div>
+
+<div class = "row">
+    <p>BTC orders : {{ BTC_trades}}</p>
 </div>
 
 
